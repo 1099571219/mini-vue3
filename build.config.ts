@@ -4,7 +4,7 @@ export default defineBuildConfig({
     // If entries is not provided, will be automatically inferred from package.json
     entries: [
         // default
-        './src/main.js',
+        './src/main.ts',
         // mkdist builder transpiles file-to-file keeping original sources structure
         // {
         //     builder: 'mkdist',
