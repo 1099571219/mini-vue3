@@ -1,1 +1,1 @@
-import render from "./utils/render";
+import renderer from "./utils/renderer";
