@@ -10,8 +10,9 @@ const render= (vNode:vNode,root:HTMLElement):void=>{
     }
     if(vNode.children instanceof Array && vNode.children.length!==0){
         vNode.children.forEach(item=>render(item,el))
+    }else{
+        el.appendChild(document.createTextNode(vNode.children))  
     }
-    el.innerText = vNode.children
     root.appendChild(el)
 }
 
